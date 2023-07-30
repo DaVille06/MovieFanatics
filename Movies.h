@@ -12,7 +12,7 @@ public:
 	void watchMovie(std::string& name);
 	void displayMovies();
 private:
-	std::map<std::string, Movie> m_movieCollection;
+	std::map<std::string, Movie*> m_movieCollection;
 };
 
 #endif // !MOVIES_H

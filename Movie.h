@@ -9,7 +9,7 @@ class Movie
 	friend class Movies;
 
 private:
-	Movie(std::string name, MovieRating rating);
+	Movie(std::string& name, MovieRating& rating, int watchedCount);
 
 	const std::string m_name;
 	const MovieRating m_rating;

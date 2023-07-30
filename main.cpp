@@ -6,9 +6,14 @@
 * display error if movie is already in collection
 * display error if increment count for movie not in collection
 */
-#include "Movie.h"
+#include "Movies.h"
 
 int main(int argc, char* argv[])
 {
+	Movies movies;
+	std::string goodeallas {"Goodfellas"};
+	enum MovieRating rating = R;
+	movies.addMovie(goodeallas, rating, 5);
+	movies.addMovie(goodeallas, rating, 6);
 	return 0;
 }

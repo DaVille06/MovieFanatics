@@ -1,8 +1,23 @@
 #include "Movies.h"
 
-void Movies::addMovie(std::string, MovieRating rating, int watchCount)
+Movies::Movies()
+{
+
+}
+
+void Movies::addMovie(std::string& name, MovieRating& rating, int watchCount)
 {
 	// add to map
+	// search map for movie
+	if (m_movieCollection.count(name) > 0)
+	{
+		std::perror("The movie has already been added.");
+	}
+	else
+	{
+		Movie movie(name, rating, watchCount);
+		m_movieCollection.insert({ name, &movie });
+	}
 }
 
 void Movies::watchMovie(std::string& name)
@@ -12,7 +27,7 @@ void Movies::watchMovie(std::string& name)
 	// if so increment
 	if (m_movieCollection.count("name") > 0)
 	{
-		m_movieCollection["name"].m_watchedCount++;
+		(*m_movieCollection["name"]).m_watchedCount++;
 	}
 	else
 	{
