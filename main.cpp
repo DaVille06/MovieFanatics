@@ -11,9 +11,10 @@
 int main(int argc, char* argv[])
 {
 	Movies movies;
-	std::string goodeallas {"Goodfellas"};
+	std::string goodfellas {"Goodfellas"};
 	enum MovieRating rating = R;
-	movies.addMovie(goodeallas, rating, 5);
-	movies.addMovie(goodeallas, rating, 6);
+	movies.addMovie(goodfellas, rating, 5);
+	movies.addMovie(goodfellas, rating, 6);
+	movies.watchMovie(goodfellas);
 	return 0;
 }
