@@ -10,11 +10,5 @@
 
 int main(int argc, char* argv[])
 {
-	Movies movies;
-	std::string goodfellas {"Goodfellas"};
-	enum MovieRating rating = R;
-	movies.addMovie(goodfellas, rating, 5);
-	movies.addMovie(goodfellas, rating, 6);
-	movies.watchMovie(goodfellas);
 	return 0;
 }
