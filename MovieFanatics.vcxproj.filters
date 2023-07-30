@@ -32,5 +32,8 @@
     <ClInclude Include="Movies.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MovieRating.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -6,6 +6,7 @@
 * display error if movie is already in collection
 * display error if increment count for movie not in collection
 */
+#include "Movie.h"
 
 int main(int argc, char* argv[])
 {
